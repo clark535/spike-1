@@ -14,4 +14,19 @@ spikeApp.controller('SpikeController', function ($http) {
         // YOUR CODE HERE
     }
 
+    vm.keywordSearch = function(keyword) {
+        var keyword = 'friday';
+        $http({
+            method: 'GET',
+            url: '/maps',
+            params: {
+                q: keyword
+            }
+        }).then(function (response) {
+            console.log('response', response.data.data);
+            vm.searchResults = response.data.data;
+        });
+    }
+    vm.keywordSearch();
+
 });
