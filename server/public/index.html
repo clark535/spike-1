@@ -10,13 +10,20 @@
   </head>
   <body ng-app="spikeApp">
     <div class="container">
-      <h1>Google Maps API Spike</h1>
+      <h1>Google Maps Static API Spike</h1>
       <div ng-controller="SpikeController as vm">
 
-        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
-        &markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
-        &markers=color:red%7Clabel:C%7C40.718217,-73.998284
-        &key=AIzaSyBXCCVmaJXKRVD4t_t3cCr-pDpV1gy16Gs">
+        <p class="well"><img src="https://maps.googleapis.com/maps/api/staticmap?center=&zoom=1&size=600x300&maptype=terrain
+            &key=AIzaSyBXCCVmaJXKRVD4t_t3cCr-pDpV1gy16Gs">World View - starting view
+        </p>
+            <br>
+        <p class="well"><img src="https://maps.googleapis.com/maps/api/staticmap?center=India&zoom=4&size=600x300&maptype=terrain
+        &key=AIzaSyBXCCVmaJXKRVD4t_t3cCr-pDpV1gy16Gs">Zoomed on India
+        </p>
+            <br>    
+        <p class="well"><img src="https://maps.googleapis.com/maps/api/staticmap?center=Egypt&zoom=5&size=600x300&maptype=terrain
+        &key=AIzaSyBXCCVmaJXKRVD4t_t3cCr-pDpV1gy16Gs">Zoomed on Egypt
+        </p>
         <!-- Random button, text field and search button go here -->
 
         <!-- Display results here using ng-repeat -->
